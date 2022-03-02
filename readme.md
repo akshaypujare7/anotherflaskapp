@@ -1,14 +1,6 @@
-# Project Setup
+# My website
 
-[![Production Workflow](https://github.com/kaw393939/docker_flask/actions/workflows/prod.yml/badge.svg)](https://github.com/kaw393939/docker_flask/actions/workflows/prod.yml)
-
-* [Production Deployment](https://kwilliam-prod.herokuapp.com/)
-
-
-[![Development Workflow](https://github.com/kaw393939/docker_flask/actions/workflows/dev.yml/badge.svg)](https://github.com/kaw393939/docker_flask/actions/workflows/dev.yml)
-
-* [Developmental Deployment](https://kwilliam-dev.herokuapp.com/)
-
+* [My APP](https://apujare-flask.herokuapp.com/)
 ## Setting up CI/CD
 
 The result of this will be that when you create a pull request to merge a branch to master, it will deploy to your
@@ -47,7 +39,3 @@ app/dyno.
 .pylintrc is the config for pylint, .coveragerc is the config for coverage and setup.py is a config file for pytest
 
 
-### Future Notes and Resources
-* https://flask-user.readthedocs.io/en/latest/basic_app.html
-* https://hackersandslackers.com/flask-application-factory/
-* https://suryasankar.medium.com/a-basic-app-factory-pattern-for-production-ready-websites-using-flask-and-sqlalchemy-dbb891cdf69f
