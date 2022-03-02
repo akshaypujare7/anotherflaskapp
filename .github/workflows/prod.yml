@@ -1,16 +1,11 @@
-name: Run Tests, Build Dockerfile, Run on Heroku
+name: Production Workflow
 
 on:
   push:
     branches:
       - 'master'
-      - 'main'
     tags:
       - 'v*'
-  pull_request:
-    branches:
-      - 'master'
-      - 'main'
 
 jobs:
   runtest:
@@ -26,7 +21,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Test with pytest
-        run: pytest --pylint -vv
+        run: pytest -vv
 
   build-container:
     runs-on: ubuntu-latest
